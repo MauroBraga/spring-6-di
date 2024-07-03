@@ -21,6 +21,11 @@ class Spring6DiApplicationTests {
 	}
 
 	@Test
+	void testInterface(){
+		System.out.println(myController.sayHello());
+	}
+
+	@Test
 	void testGetControllerCtx(){
 		MyController controller = context.getBean(MyController.class);
 		System.out.println(controller.sayHello());
